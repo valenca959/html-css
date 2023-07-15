@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagenm dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho de seu navegador.</p>
+
+    <picture>
+       <source media="(max-width: 750px)" srcset="./imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imagens/paisagem-m.png" type="image/png">
+        <img src="./imagens/paisagem-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios</p>
+    <audio controls preload="metadata" loop>
+        <source src="./midia/track.mp3.mp3" type="audio/mpeg">
+        <source src="./midia/track.mp3.ogg" type="audio/ogg">
+        <source src="./midia/track.mp3.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir Áudio. <a href="./midia/track.mp3.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <h1>Reproduzindo Vídeos</h1>
+    <video width="550" poster="./midia/postcafe.png" controls preload="metadata">
+        <source src="./midia/pexels-kelly-6769791-3840x2160-24fps.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+</body>
+</html>
